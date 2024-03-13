@@ -13,5 +13,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require("behavior-setup")
 
-require("lazy")
-  .setup("plugins")
+require("lazy").setup("plugins")
