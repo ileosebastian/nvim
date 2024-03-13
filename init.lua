@@ -19,8 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
-vim.cmd("colorscheme onedark")
-
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
@@ -31,6 +29,5 @@ treesitter_configs.setup({
   highlight = { enable = true },
   indent = { enable = true },
 })
-
 
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem left<CR>', {})
