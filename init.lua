@@ -17,25 +17,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local plugins = {
-  {
-    "olimorris/onedarkpro.nvim",
-    name="onedark",
-    priority = 1000
-  },
-  {
-    'nvim-telescope/telescope.nvim', tag = '0.1.5',
-    dependencies = { 'nvim-lua/plenary.nvim' }
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-  },
-}
-
-local opts = {}
-
-require("lazy").setup(plugins, opts)
+require("lazy").setup("plugins")
 
 vim.cmd("colorscheme onedark")
 
@@ -49,3 +31,6 @@ treesitter_configs.setup({
   highlight = { enable = true },
   indent = { enable = true },
 })
+
+
+vim.keymap.set('n', '<leader>e', ':Neotree filesystem left<CR>', {})
