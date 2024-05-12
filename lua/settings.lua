@@ -15,7 +15,7 @@ local settings = {
   "set hlsearch",
   "set noincsearch",
   --"set updatetime=50",
-  --"colorscheme habamax",
+  "colorscheme habamax",
 }
 
 for i,set in ipairs(settings) do
