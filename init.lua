@@ -1,8 +1,9 @@
 --[[
-  This file is only use to import the entire customization neovim settings 
+  This file is only use to import the entire customization neovim settings
   as standalone files.
   Example: key mappings, plugins, color schemes and more...
-]]--
+]]
+--
 require("settings")
 require("keymaps")
 

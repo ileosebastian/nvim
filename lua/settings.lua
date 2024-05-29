@@ -2,6 +2,7 @@
 local settings = {
   "set clipboard=unnamedplus",
 
+  "set number",
   "set relativenumber",
   "set colorcolumn=80",
   "set cursorline",
