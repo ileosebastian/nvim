@@ -10,8 +10,13 @@ return {
     require("nvim-tree").setup({
       view = {
         side = "right",
-        width = 28
-      }
+        width = 28,
+      },
+      actions = {
+        open_file = {
+          quit_on_open = true,
+        },
+      },
     })
 
     vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
