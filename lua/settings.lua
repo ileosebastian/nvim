@@ -8,8 +8,8 @@ local settings = {
   "set cursorline",
 
   "set expandtab",
-  "set tabstop=2",
-  "set shiftwidth=2",
+  "set tabstop=4",
+  "set shiftwidth=4",
 
   "set smartindent",
 
@@ -19,7 +19,7 @@ local settings = {
   "colorscheme habamax",
 }
 
-for i,set in ipairs(settings) do
+for _,set in ipairs(settings) do
   vim.cmd(set)
 end
 

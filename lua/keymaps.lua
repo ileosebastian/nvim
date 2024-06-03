@@ -17,5 +17,8 @@ set_keymap("n", "<C-J>", "<C-W>j")
 set_keymap("n", "<C-K>", "<C-W>k")
 set_keymap("n", "<C-L>", "<C-W>l")
 
+set_keymap("n", "<tab>", ":bn<CR>")
+set_keymap("n", "<S-tab>", ":bp<CR>")
+
 set_keymap("i", "jj", "<Esc>")
 
