@@ -14,6 +14,7 @@ return {
                 -- require("none-ls.diagnostics.eslint"), -- requires none-ls-extras.nvim
 
                 null_ls.builtins.formatting.csharpier,
+                -- null_ls.builtins.formatting.rustfmt,
 
                 -- null_ls.builtins.formatting["google-java-format"],
 
