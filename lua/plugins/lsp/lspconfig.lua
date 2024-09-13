@@ -1,13 +1,9 @@
-local languages = {
-	"lua_ls",
-	"tsserver",
-}
 
 return {
 	"neovim/nvim-lspconfig",
 	opts = {
 		servers = {
-			tsserver = {
+			ts_ls = {
 				on_attach = function(client)
 					-- this is important, otherwise tsserver will format ts/js
 					-- files which we *really* don't want.
@@ -24,13 +20,17 @@ return {
 			capabilities = capabilities,
 		})
 
-		lspconfig["tsserver"].setup({
+		lspconfig["ts_ls"].setup({
 			capabilities = capabilities,
 		})
 		-- lspconfig["biome"].setup({
 		--     capabilities = capabilities
 		-- })
 		lspconfig["angularls"].setup({
+			capabilities = capabilities,
+		})
+
+		lspconfig["svelte"].setup({
 			capabilities = capabilities,
 		})
 
